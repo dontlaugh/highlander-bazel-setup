@@ -1,0 +1,57 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix ""
+# gazelle:resolve go paperless/auth //go/src/paperless/auth:go_default_library
+# gazelle:resolve go paperless/cache //go/src/paperless/cache:go_default_library
+# gazelle:resolve go paperless/cereal //go/src/paperless/cereal:go_default_library
+# gazelle:resolve go paperless/commerce //go/src/paperless/commerce:go_default_library
+# gazelle:resolve go paperless/config //go/src/paperless/config:go_default_library
+# gazelle:resolve go paperless/database //go/src/paperless/database:go_default_library
+# gazelle:resolve go paperless/emails //go/src/paperless/emails:go_default_library
+# gazelle:resolve go paperless/entitlements //go/src/paperless/entitlements:go_default_library
+# gazelle:resolve go paperless/entitlements/resource //go/src/paperless/entitlements/resource:go_default_library
+# gazelle:resolve go paperless/entitlements/tokens //go/src/paperless/entitlements/tokens:go_default_library
+# gazelle:resolve go paperless/events //go/src/paperless/events:go_default_library
+# gazelle:resolve go paperless/furl //go/src/paperless/furl:go_default_library
+# gazelle:resolve go paperless/guests //go/src/paperless/guests:go_default_library
+# gazelle:resolve go paperless/health //go/src/paperless/health:go_default_library
+# gazelle:resolve go paperless/identity //go/src/paperless/identity:go_default_library
+# gazelle:resolve go paperless/ids //go/src/paperless/ids:go_default_library
+# gazelle:resolve go paperless/jpatch //go/src/paperless/jpatch:go_default_library
+# gazelle:resolve go paperless/messaging //go/src/paperless/messaging:go_default_library
+# gazelle:resolve go paperless/messaging/pugscrub //go/src/paperless/messaging/pugscrub:go_default_library
+# gazelle:resolve go paperless/messaging/queue //go/src/paperless/messaging/queue:go_default_library
+# gazelle:resolve go paperless/network //go/src/paperless/network:go_default_library
+# gazelle:resolve go paperless/pages //go/src/paperless/pages:go_default_library
+# gazelle:resolve go paperless/pagination //go/src/paperless/pagination:go_default_library
+# gazelle:resolve go paperless //go/src/paperless:go_default_library
+# gazelle:resolve go paperless/perrors //go/src/paperless/perrors:go_default_library
+# gazelle:resolve go paperless/proto //go/src/paperless/proto:go_default_library
+# gazelle:resolve go paperless/rails //go/src/paperless/rails:go_default_library
+# gazelle:resolve go paperless/roto //go/src/paperless/roto:go_default_library
+# gazelle:resolve go paperless/stats //go/src/paperless/stats:go_default_library
+# gazelle:resolve go paperless/stork //go/src/paperless/stork:go_default_library
+# gazelle:resolve go paperless/tags //go/src/paperless/tags:go_default_library
+# gazelle:resolve go paperless/templating //go/src/paperless/templating:go_default_library
+# gazelle:resolve go paperless/tester //go/src/paperless/tester:go_default_library
+# gazelle:resolve go paperless/timber //go/src/paperless/timber:go_default_library
+# gazelle:resolve go paperless/timezone //go/src/paperless/timezone:go_default_library
+# gazelle:resolve go paperless/tracing //go/src/paperless/tracing:go_default_library
+
+# gazelle:resolve go paperless/service/assets //go/src/paperless/service/assets:go_default_library
+# gazelle:resolve go paperless/service/assets/data //go/src/paperless/service/assets/data:go_default_library
+# gazelle:resolve go paperless/service/assets/handler //go/src/paperless/service/assets/handler:go_default_library
+# gazelle:resolve go paperless/service/assets/processing //go/src/paperless/service/assets/processing:go_default_library
+# gazelle:resolve go paperless/service/assets/resource //go/src/paperless/service/assets/resource:go_default_library
+# gazelle:resolve go paperless/service/assets/routing //go/src/paperless/service/assets/routing:go_default_library
+# gazelle:resolve go paperless/service/assets/storage //go/src/paperless/service/assets/storage:go_default_library
+
+# gazelle:resolve go paperless/service/auth //go/src/paperless/service/auth:go_default_library
+
+# gazelle:resolve go paperless/service //go/src/paperless/service
+
+
+
+gazelle(
+    name = "gazelle",
+)
