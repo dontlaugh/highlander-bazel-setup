@@ -1,6 +1,6 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# ggggggggprefix ""
+# gazelle:prefix ""
 
 # gazelle:resolve go paperless/auth //go/src/paperless/auth:go_default_library
 # gazelle:resolve go paperless/cache //go/src/paperless/cache:go_default_library
