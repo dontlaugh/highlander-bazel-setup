@@ -13,11 +13,14 @@ func main() {
 		gazelle: finding module path for import paperless/service/entitlements: exit status 1: can't load package: package paperless/service/entitlements: malformed module path "paperless/service/entitlements": missing dot in first path element
 	*/
 	scnr := bufio.NewScanner(os.Stdin)
+	resolves := make(map[string]bool)
 	for scnr.Scan() {
 		line := scnr.Text()
 		found, parsed := resolveAnnotation(line)
-		if found {
+		// look up/add to resolves map to prevent printing dupes
+		if found && !resolves[parsed] {
 			fmt.Println(parsed)
+			resolves[parsed] = true
 		}
 	}
 }
