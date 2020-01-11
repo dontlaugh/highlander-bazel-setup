@@ -151,15 +151,26 @@ bazel run //:gazelle
 We MUST specify manual resolution for our go packages in the highlander repo due
 to the "paperless" import root that we declare.
 
+## Run Go tests
+
+```
+bazel run --verbose_failures //go/src/paperless/cmd/argo-repo:go_default_test
+```
 
 ## CI TODOs
 
 
 ## Patches
 
+Q: do we need empty import prefix?
+
 The `importpath` in `go_library` needs to start with "paperless"
 
+Add annotations for new libs we add:
 
+```
+cat ERRORS.txt | go run gazelle_helper.go >> BUILD.bazel 
+```
 
 
 
