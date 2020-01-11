@@ -1,6 +1,7 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix ""
+# ggggggggprefix ""
+
 # gazelle:resolve go paperless/auth //go/src/paperless/auth:go_default_library
 # gazelle:resolve go paperless/cache //go/src/paperless/cache:go_default_library
 # gazelle:resolve go paperless/cereal //go/src/paperless/cereal:go_default_library
@@ -37,6 +38,39 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 # gazelle:resolve go paperless/timber //go/src/paperless/timber:go_default_library
 # gazelle:resolve go paperless/timezone //go/src/paperless/timezone:go_default_library
 # gazelle:resolve go paperless/tracing //go/src/paperless/tracing:go_default_library
+# gazelle:resolve go paperless/cache/inmemory //go/src/paperless/cache/inmemory:go_default_library
+# gazelle:resolve go paperless/service/entitlements/converters //go/src/paperless/service/entitlements/converters:go_default_library
+# gazelle:resolve go paperless/experiment //go/src/paperless/experiment:go_default_library
+# gazelle:resolve go paperless/service/assets/migrate //go/src/paperless/service/assets/migrate:go_default_library
+# gazelle:resolve go paperless/service/entitlements //go/src/paperless/service/entitlements:go_default_library
+# gazelle:resolve go paperless/service/events //go/src/paperless/service/events:go_default_library
+# gazelle:resolve go paperless/service/example //go/src/paperless/service/example:go_default_library
+# gazelle:resolve go paperless/service/furl/migrate //go/src/paperless/service/furl/migrate:go_default_library
+# gazelle:resolve go paperless/service/furl //go/src/paperless/service/furl:go_default_library
+# gazelle:resolve go paperless/service/guests/resource //go/src/paperless/service/guests/resource:go_default_library
+# gazelle:resolve go paperless/service/guests/xerr //go/src/paperless/service/guests/xerr:go_default_library
+# gazelle:resolve go paperless/service/guests/migration //go/src/paperless/service/guests/migration:go_default_library
+# gazelle:resolve go paperless/service/guests/data //go/src/paperless/service/guests/data:go_default_library
+# gazelle:resolve go paperless/service/guests //go/src/paperless/service/guests:go_default_library
+# gazelle:resolve go paperless/service/identity/models //go/src/paperless/service/identity/models:go_default_library
+# gazelle:resolve go paperless/service/identity/modules //go/src/paperless/service/identity/modules:go_default_library
+# gazelle:resolve go paperless/service/identity //go/src/paperless/service/identity:go_default_library
+# gazelle:resolve go paperless/service/mauler //go/src/paperless/service/mauler:go_default_library
+# gazelle:resolve go paperless/service/pages //go/src/paperless/service/pages:go_default_library
+# gazelle:resolve go paperless/service/stork/data //go/src/paperless/service/stork/data:go_default_library
+# gazelle:resolve go paperless/service/pingpong //go/src/paperless/service/pingpong:go_default_library
+# gazelle:resolve go paperless/service/polls //go/src/paperless/service/polls:go_default_library
+# gazelle:resolve go paperless/service/reverb //go/src/paperless/service/reverb:go_default_library
+# gazelle:resolve go paperless/service/settings/resource //go/src/paperless/service/settings/resource:go_default_library
+# gazelle:resolve go paperless/service/settings/api //go/src/paperless/service/settings/api:go_default_library
+# gazelle:resolve go paperless/service/settings/binder //go/src/paperless/service/settings/binder:go_default_library
+# gazelle:resolve go paperless/service/stork //go/src/paperless/service/stork:go_default_library
+# gazelle:resolve go paperless/service/vibes/resource //go/src/paperless/service/vibes/resource:go_default_library
+# gazelle:resolve go paperless/service/vibes //go/src/paperless/service/vibes:go_default_library
+# gazelle:resolve go paperless/tools/entitlements_backfill/data //go/src/paperless/tools/entitlements_backfill/data:go_default_library
+
+
+
 
 # gazelle:resolve go paperless/service/assets //go/src/paperless/service/assets:go_default_library
 # gazelle:resolve go paperless/service/assets/data //go/src/paperless/service/assets/data:go_default_library
