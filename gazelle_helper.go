@@ -23,17 +23,16 @@ func main() {
 }
 
 func resolveAnnotation(line string) (bool, string) {
-	// we use a pointer so the nil value means "not found"
-	var result string
-	if strings.HasPrefix("gazelle: finding module path for import", line) {
+	if strings.HasPrefix(line, "gazelle: finding module path for import") {
 		splitted := strings.Split(line, " ")
-		// get lib path like  paperless/service/entitlements:
-		lib := splitted[6]
-		// remove the ":"
-		lib = strings.Replace(lib, ":", "", 1)
+		if len(splitted) < 7 {
+			return false, ""
+		}
+		// get lib path like "paperless/service/entitlements:" and remove the ":"
+		lib := strings.Replace(splitted[6], ":", "", 1)
 		// template the annotation
 		lib = fmt.Sprintf("# gazelle:resolve go %s //go/src/%s:go_default_library", lib, lib)
 		return true, lib
 	}
-	return false, result
+	return false, ""
 }
