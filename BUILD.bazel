@@ -1,7 +1,7 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# gazelle:prefix ""
-
+# gazelle:proto disable_global
+# gazelle:prefix
 # gazelle:resolve go paperless/auth //go/src/paperless/auth:go_default_library
 # gazelle:resolve go paperless/cache //go/src/paperless/cache:go_default_library
 # gazelle:resolve go paperless/cereal //go/src/paperless/cereal:go_default_library

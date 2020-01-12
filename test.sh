@@ -13,6 +13,7 @@ cp WORKSPACE highlander
 # that will let us run gazelle to generate all our packages
 cp BUILD.bazel highlander
 
+cp BUILD.bazel.empty-prefix highlander/go/src
 
 pushd highlander
 bazel run //:gazelle -- update-repos -from_file=go/src/paperless/go.mod

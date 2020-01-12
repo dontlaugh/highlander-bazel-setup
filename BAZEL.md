@@ -172,6 +172,11 @@ Add annotations for new libs we add:
 cat ERRORS.txt | go run gazelle_helper.go >> BUILD.bazel 
 ```
 
+## Protobuf?
+
+https://github.com/bazelbuild/rules_go/blob/master/proto/core.rst#option-2-use-pre-generated-pbgo-files
+
+Add `# gazelle:proto disable_global`
 
 
 
