@@ -1,7 +1,7 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
-# ggggggggprefix ""
-
+# gazelle:proto disable_global
+# gazelle:prefix
 # gazelle:resolve go paperless/auth //go/src/paperless/auth:go_default_library
 # gazelle:resolve go paperless/cache //go/src/paperless/cache:go_default_library
 # gazelle:resolve go paperless/cereal //go/src/paperless/cereal:go_default_library
@@ -68,6 +68,29 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 # gazelle:resolve go paperless/service/vibes/resource //go/src/paperless/service/vibes/resource:go_default_library
 # gazelle:resolve go paperless/service/vibes //go/src/paperless/service/vibes:go_default_library
 # gazelle:resolve go paperless/tools/entitlements_backfill/data //go/src/paperless/tools/entitlements_backfill/data:go_default_library
+# gazelle:resolve go paperless/service/entitlements/data //go/src/paperless/service/entitlements/data:go_default_library
+# gazelle:resolve go paperless/service/entitlements/migrate //go/src/paperless/service/entitlements/migrate:go_default_library
+# gazelle:resolve go paperless/service/entitlements/handler //go/src/paperless/service/entitlements/handler:go_default_library
+# gazelle:resolve go paperless/service/guests/handler //go/src/paperless/service/guests/handler:go_default_library
+# gazelle:resolve go paperless/service/guests/schedule //go/src/paperless/service/guests/schedule:go_default_library
+# gazelle:resolve go paperless/service/guests/email //go/src/paperless/service/guests/email:go_default_library
+# gazelle:resolve go paperless/service/guests/guest2 //go/src/paperless/service/guests/guest2:go_default_library
+# gazelle:resolve go paperless/service/guests/xauth //go/src/paperless/service/guests/xauth:go_default_library
+# gazelle:resolve go paperless/service/guests/binder //go/src/paperless/service/guests/binder:go_default_library
+# gazelle:resolve go paperless/service/guests/guest //go/src/paperless/service/guests/guest:go_default_library
+# gazelle:resolve go paperless/service/guests/message_to_host //go/src/paperless/service/guests/message_to_host:go_default_library
+# gazelle:resolve go paperless/service/guests/reqres //go/src/paperless/service/guests/reqres:go_default_library
+# gazelle:resolve go paperless/service/guests/invite //go/src/paperless/service/guests/invite:go_default_library
+# gazelle:resolve go paperless/service/identity/errors //go/src/paperless/service/identity/errors:go_default_library
+# gazelle:resolve go paperless/service/identity/config //go/src/paperless/service/identity/config:go_default_library
+# gazelle:resolve go paperless/service/identity/controllers //go/src/paperless/service/identity/controllers:go_default_library
+# gazelle:resolve go paperless/service/identity/models/modelsfakes //go/src/paperless/service/identity/models/modelsfakes:go_default_library
+# gazelle:resolve go paperless/service/pages/ppfastly //go/src/paperless/service/pages/ppfastly:go_default_library
+# gazelle:resolve go paperless/service/reverb/handler //go/src/paperless/service/reverb/handler:go_default_library
+# gazelle:resolve go paperless/service/stork/handler //go/src/paperless/service/stork/handler:go_default_library
+# gazelle:resolve go paperless/service/vibes/data //go/src/paperless/service/vibes/data:go_default_library
+# gazelle:resolve go paperless/service/vibes/handler //go/src/paperless/service/vibes/handler:go_default_library
+# gazelle:resolve go paperless/service/vibes/migrate //go/src/paperless/service/vibes/migrate:go_default_library
 
 
 

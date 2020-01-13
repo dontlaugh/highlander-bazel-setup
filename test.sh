@@ -11,10 +11,11 @@ cp WORKSPACE highlander
 
 # the gazelle-focused BUILD file that sits in the root. This has a gazelle rule
 # that will let us run gazelle to generate all our packages
-cp BUILD.bazel highlander
+cp BUILD.bazel highlander/go/src
 
+touch highlander/BUILD.bazel
 
 pushd highlander
-bazel run //:gazelle -- update-repos -from_file=go/src/paperless/go.mod
+bazel run //go/src:gazelle -- update-repos -from_file=go/src/paperless/go.mod
 popd
 
